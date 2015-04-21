@@ -1,0 +1,104 @@
+\documentclass{article}
+\usepackage[
+  letterpaper,
+  margin=1in,
+  headsep=4pt, % separation between header rule and text
+]{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tgschola}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{%
+  \footnotesize\sffamily
+  \yourname\quad
+  web: \textcolor{blue}{\itshape\yourweb}\quad
+  \textcolor{blue}{\youremail}}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+
+\newcommand{\soptitle}{Statement of Purpose}
+
+\newcommand{\yourname}{firstname lastname}
+\newcommand{\youremail}{email@address.edu}
+\newcommand{\yourweb}{https://www.abcd.com/}
+
+\newcommand{\statement}[1]{\par\medskip
+  \underline{\textcolor{blue}{\textbf{#1:}}}\space
+}
+
+\usepackage[
+  colorlinks,
+  breaklinks,
+  pdftitle={\yourname - \soptitle},
+  pdfauthor={\yourname},
+  unicode
+]{hyperref}
+
+\begin{document}
+
+\begin{center}\LARGE\soptitle\\
+\large of \yourname\ (ECE PhD applicant for Fall---2014)
+\end{center}
+
+\hrule
+\vspace{1pt}
+\hrule height 1pt
+
+\bigskip
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+sodales, ipsum a commodo tempus, arcu magna bibendum turpis, at
+eleifend nulla lectus et turpis. Etiam nisi risus, ultricies at auctor
+id, mollis vitae lorem. Morbi vel rhoncus mi. Aenean euismod eros
+vitae turpis porttitor varius. Donec aliquam fringilla tellus nec
+venenatis. Fusce ornare tempor metus, non bibendum massa vehicula sit
+amet. Integer ultrices rutrum velit, in facilisis augue feugiat sed.
+Fusce luctus tristique pretium. Nullam consequat tincidunt sem, at
+gravida purus gravida at. Suspendisse potenti. Nunc ante leo, volutpat
+pretium fringilla id, malesuada et dolor. Aliquam blandit, magna eget
+porta tempus, quam neque ultrices mi, vel pretium ipsum ante tristique
+massa. Pellentesque habitant morbi tristique senectus et netus et
+malesuada fames ac turpis egestas. In hac habitasse platea dictumst.
+
+\statement{Project \#1}
+Morbi sed sapien ut ante elementum luctus vitae et libero. Praesent
+felis enim, elementum nec suscipit non, suscipit a diam. Nulla
+vulputate facilisis orci, vel iaculis odio feugiat id. Fusce in dolor
+interdum ante dignissim bibendum. Nullam euismod interdum commodo.
+Etiam a mauris ac purus dignissim ultrices at eu nisl. Suspendisse
+varius ipsum eu massa ullamcorper in convallis nulla vulputate.
+
+\statement{Project \#2}
+Nulla non mauris quis mi pellentesque interdum. Sed venenatis pretium
+sem sed pretium. Pellentesque et augue velit, ut bibendum leo. Proin
+congue nisl id leo tristique sagittis. Curabitur id diam in turpis
+faucibus pharetra eget elementum orci. Sed vel nunc nibh. Praesent non
+enim eros, sed convallis dui. Pellentesque accumsan viverra dolor sed
+luctus.
+
+Sed non posuere leo. Curabitur eu est ut tellus ultrices ornare quis
+ut tortor. Aliquam faucibus mauris in leo tincidunt euismod. Aliquam
+lacinia euismod dolor, tempus gravida erat facilisis elementum.
+Pellentesque pretium pharetra orci, eu consequat arcu dapibus et.
+Quisque quis dolor magna. Fusce gravida risus at ipsum lobortis id
+facilisis justo malesuada. Donec egestas placerat congue. Curabitur
+eget diam at odio iaculis pellentesque quis in est. Aenean sit amet
+sodales tortor. Morbi a nulla magna.
+
+\statement{Conclusion}
+Praesent vel mi pharetra justo lacinia consectetur. In in odio neque.
+Donec in tellus nulla, quis fringilla quam. In hac habitasse platea
+dictumst. In hac habitasse platea dictumst. Maecenas nisi elit, dictum
+at fringilla vitae, vestibulum vitae ligula. Vestibulum ante ipsum
+primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis
+placerat ipsum sit amet ante fermentum condimentum. Nunc facilisis
+eros euismod nisl euismod id egestas turpis imperdiet. Etiam
+consectetur risus vitae augue scelerisque in fringilla odio
+vestibulum. Ut venenatis convallis suscipit. Maecenas cursus dignissim
+semper. Vestibulum tempor lectus vel justo consequat vel faucibus enim
+viverra. Donec nunc ligula, luctus nec molestie eget, aliquam vel
+lectus.
+
+\end{document}
